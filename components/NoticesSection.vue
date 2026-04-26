@@ -11,7 +11,7 @@
               </h2>
               <p class="text-sm text-gray-500">Latest public notifications, speeches and portal updates</p>
             </div>
-            <NuxtLink to="/notices" class="hidden sm:inline-flex items-center gap-1 text-primary font-medium text-sm hover:text-primary-dark transition-colors">
+            <NuxtLink to="#" class="hidden sm:inline-flex items-center gap-1 text-primary font-medium text-sm hover:text-primary-dark transition-colors">
               View All
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -60,7 +60,7 @@
 
           <!-- Mobile View All -->
           <div class="mt-4 sm:hidden text-center">
-            <NuxtLink to="/notices" class="text-primary font-medium text-sm">View All Notices →</NuxtLink>
+            <NuxtLink to="#" class="text-primary font-medium text-sm">View All Notices →</NuxtLink>
           </div>
         </div>
 
@@ -121,7 +121,7 @@ const notices = [
     day: '24',
     month: 'Apr',
     date: '24 April 2026',
-    href: '/notices/1',
+    href: '#',
   },
   {
     id: 2,
@@ -131,7 +131,7 @@ const notices = [
     day: '22',
     month: 'Apr',
     date: '22 April 2026',
-    href: '/notices/2',
+    href: '#',
   },
   {
     id: 3,
@@ -141,7 +141,7 @@ const notices = [
     day: '20',
     month: 'Apr',
     date: '20 April 2026',
-    href: '/notices/3',
+    href: '#',
   },
   {
     id: 4,
@@ -151,7 +151,7 @@ const notices = [
     day: '18',
     month: 'Apr',
     date: '18 April 2026',
-    href: '/notices/4',
+    href: '#',
   },
   {
     id: 5,
@@ -161,7 +161,7 @@ const notices = [
     day: '15',
     month: 'Apr',
     date: '15 April 2026',
-    href: '/notices/5',
+    href: '#',
   },
 ]
 
@@ -175,22 +175,22 @@ const updates = [
 const quickLinks = [
   {
     label: 'Accessibility',
-    href: '/accessibility',
+    href: '#',
     icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>',
   },
   {
     label: 'Screen Reader',
-    href: '/screen-reader',
+    href: '#',
     icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></svg>',
   },
   {
     label: 'Website Policies',
-    href: '/website-policies',
+    href: '#',
     icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>',
   },
   {
     label: 'Web Information Manager',
-    href: '/web-information-manager',
+    href: '#',
     icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>',
   },
 ]

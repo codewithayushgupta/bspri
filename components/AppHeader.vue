@@ -84,13 +84,19 @@
               </div>
             </div>
 
-            <!-- Sign In Button (Desktop) -->
-            <button class="hidden lg:flex items-center gap-2 px-4 py-2 bg-primary text-white text-sm font-medium rounded-full hover:bg-primary-dark transition-all duration-200 shadow-sm">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            <!-- PRD Portal Button (Desktop) -->
+            <a href="https://bihar-panchyati-raj.vercel.app/" target="_blank" rel="noopener noreferrer" class="hidden lg:flex items-center gap-2.5 px-4 py-2 bg-gradient-to-r from-primary-900 to-primary text-white rounded-lg hover:from-primary-dark hover:to-primary-900 transition-all duration-200 shadow-md hover:shadow-lg border border-primary-700">
+              <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
               </svg>
-              Citizen Login
-            </button>
+              <div class="flex flex-col leading-tight">
+                <span class="text-xs font-bold tracking-wide">PRD Portal</span>
+                <span class="text-[10px] text-white/70">Panchayati Raj Dept.</span>
+              </div>
+              <svg class="w-3.5 h-3.5 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
 
             <!-- Mobile Search Toggle -->
             <button
@@ -156,12 +162,18 @@
               {{ item.label }}
             </NuxtLink>
             <div class="pt-3 border-t border-gray-100">
-              <button class="w-full flex items-center justify-center gap-2 px-4 py-3 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary-dark transition-colors">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              <a href="https://bihar-panchyati-raj.vercel.app/" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-3 px-4 py-3 bg-gradient-to-r from-primary-900 to-primary text-white rounded-lg hover:from-primary-dark hover:to-primary-900 transition-colors shadow-md border border-primary-700">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
-                Citizen Login / Register
-              </button>
+                <div class="flex flex-col leading-tight text-left">
+                  <span class="text-sm font-bold">Visit PRD Portal</span>
+                  <span class="text-xs text-white/70">Panchayati Raj Department</span>
+                </div>
+                <svg class="w-4 h-4 text-white/60 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
             </div>
           </nav>
         </div>
@@ -186,25 +198,25 @@ const navItems = [
   },
   {
     label: 'State Profile',
-    href: '/state-profile',
+    href: '#',
     active: false,
     icon: '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>',
   },
   {
     label: 'Departments',
-    href: '/departments',
+    href: '#',
     active: false,
     icon: '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>',
   },
   {
     label: 'Dashboard',
-    href: '/dashboard',
+    href: '#',
     active: false,
     icon: '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>',
   },
   {
     label: 'Media Gallery',
-    href: '/media-gallery',
+    href: '#',
     active: false,
     icon: '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>',
   },
